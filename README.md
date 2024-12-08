@@ -180,6 +180,15 @@ $env.config.plugins.dns = {
 
 ## Install
 
+- using [nupm](https://github.com/nushell/nupm)  
+  - clone the repository, install with nupm 
+
+```nu
+nupm install --path nu_plugin_dns -f
+```
+
+- using cargo
+
 ```nu
 cargo install nu_plugin_dns
 plugin add $"($env.CARGO_HOME)/bin/nu_plugin_dns"
