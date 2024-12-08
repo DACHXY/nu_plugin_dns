@@ -10,10 +10,10 @@ license = "MPL-2.0"
 readme = "README.md"
 keywords = ["dns", "dig", "nu", "nushell", "plugin"]
 categories = ["command-line-utilities"]
-exclude = [ ".github/" ]
+exclude = [".github/"]
 
 [package.metadata.release]
-allow-branch = [ "main" ]
+allow-branch = ["main"]
 
 
 [[bin]]
@@ -24,14 +24,14 @@ bench = false
 bench = false
 
 [dependencies]
-chrono = { version = "0.4", features = [ "std" ], default-features = false }
+chrono = { version = "0.4", features = ["std"], default-features = false }
 futures-util = "0.3.31"
-nu-plugin = "0.99.0"
-nu-protocol = "0.99.0"
+nu-plugin = "0.100.0"
+nu-protocol = "0.100.0"
 
 tokio = "1.40.0"
 tracing = "0.1"
-tracing-subscriber = { version = "0.3", features = [ "env-filter" ] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
 # rustls and webpki must keep in lockstep with hickory
 rustls = "0.21.11"
